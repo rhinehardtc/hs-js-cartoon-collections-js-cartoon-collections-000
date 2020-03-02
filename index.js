@@ -29,6 +29,7 @@ function summonCaptainPlanet(planeteerCalls){
 }
 
 //This function uses a for loop to run through the elements of the array "words", referring to the elements as "call"(s), starting at index 0 and not exceeding the length of the array. Then, within that loop it uses a conditional to return true if the length of the calls within the array "words" are greater than 4. Otherwise, it returns false.
+//Interesting Note: I learned that you can think of the if conditional statement as only happening when the condition defined is met, otherwise it is passed over. As a result, one can omit the else and just close the for loop in which it is contained, then return what you would want if that conditional is not met outside of the loop.
 
 function longPlaneteerCalls(words) {
   
@@ -38,13 +39,15 @@ function longPlaneteerCalls(words) {
       
       return true;
       
-    } else {
-      
-      return false;
-      
     }
   }
+  
+  return false;
 }
+
+
+//This function uses a for loop to go through an array called foods using the elements cheese, which checks to see if any of the elements are cheddar, gouda, or camembert. If any of those are an element, it returns the element as soon as it is encountered. Otherwise, it just returns "no cheese!".
+//Interesting Note: Using the || makes this a quicker process to type than defining multiple conditionals because it acts as "or" within the condition. 
 
 function findTheCheese (foods) {
   
