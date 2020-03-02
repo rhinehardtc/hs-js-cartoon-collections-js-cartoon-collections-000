@@ -54,9 +54,8 @@ function findTheCheese (foods) {
       
       return foods[cheese];
       
-    } else {
-      
-      return `no cheese!`;
     }
   }
+  
+  return `no cheese!`;
 }
