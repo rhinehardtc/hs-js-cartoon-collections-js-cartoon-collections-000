@@ -6,7 +6,7 @@ function dwarfRollCall(dwarves) {
   
   const numberedDwarves = [];
   
-  for (var place = 0; place < dwarves.length; place++) {
+  for (var place = dwarves.length / 2; place < dwarves.length; place++) {
         
           numberedDwarves.push(`${place + 1}. ${dwarves[place]} `);
   }
