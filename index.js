@@ -65,5 +65,15 @@ function findTheCheese (foods) {
 
 function wordsWithB (words) {
   
+  let bWords = [];
   
+  for (let i = 0; i < words.length; i++) {
+    
+    if (words[i][0] === "b" || words[i][0] === 'B') {
+      
+      bWords.push(words[i]);
+    }
+    
+    return bWords;
+  }
 }
