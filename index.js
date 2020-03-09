@@ -53,7 +53,7 @@ function findTheCheese (foods) {
   
   for (var cheese = 0; cheese < foods.length; cheese++) {
     
-    if (foods[cheese] === 'cheddar' || foods[cheese] === 'gouda' || foods[cheese] === 'camembert') {
+    if (foods[cheese] === 'cheddar' || foods[cheese] === 'gouda' || foods[cheese] === 'camembert' || foods[cheese] === 'swiss') {
       
       return foods[cheese];
       
@@ -62,3 +62,5 @@ function findTheCheese (foods) {
   
   return `no cheese!`;
 }
+
+
